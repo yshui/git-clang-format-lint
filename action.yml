@@ -1,0 +1,9 @@
+name: 'git-clang-format lint'
+author: 'Yuxuan Shui'
+description: 'Github Action that check if code is formatted correctly using clang-format'
+branding:
+  icon: 'align-left'
+  color: 'green'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
