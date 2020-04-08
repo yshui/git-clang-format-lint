@@ -4,6 +4,14 @@ description: 'Github Action that check if code is formatted correctly using clan
 branding:
   icon: 'align-left'
   color: 'green'
+inputs:
+  base:
+    description: 'The base commit to calculate diff against'
+    required: false
+    default: 'HEAD^'
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  args:
+    - ${{ inputs.base }}
+
