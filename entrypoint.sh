@@ -1,5 +1,7 @@
 #!/bin/sh -l
 
+set -x
+
 cd "$GITHUB_WORKSPACE"
 
 diff=`git-clang-format --diff --commit $INPUT_BASE`
