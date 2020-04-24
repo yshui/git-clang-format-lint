@@ -15,5 +15,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - uses: yshui/clang-format-lint-action
+      with:
+        fetch-depth: 2
+    - uses: yshui/git-clang-format-lint@master
 ```
