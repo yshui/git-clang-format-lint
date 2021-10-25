@@ -1,4 +1,4 @@
-FROM alpine:3.13
+FROM alpine:3.14
 
 COPY entrypoint.sh /entrypoint.sh
 RUN apk add clang-extra-tools
