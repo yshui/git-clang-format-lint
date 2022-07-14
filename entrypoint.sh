@@ -1,5 +1,6 @@
 #!/bin/sh
 
+git config --global --add safe.directory "$GITHUB_WORKSPACE"
 cd "$GITHUB_WORKSPACE"
 
 diff=`git-clang-format --diff --commit $INPUT_BASE`
