@@ -1,4 +1,4 @@
-FROM alpine:3.20.2
+FROM alpine:3.20
 
 RUN apk add clang18-extra-tools
 RUN apk add python3 && ln -sf python3 /usr/bin/python
